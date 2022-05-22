@@ -34,5 +34,6 @@ module RaisetechLive8SampleApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.hosts << "f371845da88842579252e1857f85a6a0.vfs.cloud9.ap-northeast-1.amazonaws.com"
   end
 end
