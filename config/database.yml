@@ -51,7 +51,12 @@ test:
 #
 production:
   <<: *default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
   database: raisetech_live8_sample_app_production
-  username: <%= ENV['RAISETECH_LIVE8_SAMPLE_APP_DATABASE_USERNAME'] %>
-  password: <%= ENV['RAISETECH_LIVE8_SAMPLE_APP_DATABASE_PASSWORD'] %>
-  host: <%= ENV['RAISETECH_LIVE8_SAMPLE_APP_DATABASE_HOST'] %>
+  pool: 5
+  username: admin 
+  password: Tana.5525
+  socket: /var/lib/mysql/mysql.sock
+  host: database-2.cddqxqerkoxw.ap-northeast-1.rds.amazonaws.com 
