@@ -1,5 +1,7 @@
 require 'rake'
 require 'rspec/core/rake_task'
+require_relative 'config/application'
+Rails.application.load_tasks
 
 task :spec    => 'spec:all'
 task :default => :spec
