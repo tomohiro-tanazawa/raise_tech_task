@@ -3,7 +3,7 @@ timeout 15
 preload_app true
 
 listen '/var/www/raisetech-live8-sample-app/unicorn.sock'
-pid    '/var/www/ec2-user/raisetech-live8-sample-app/unicorn.pid'
+pid    '/var/www/raisetech-live8-sample-app/unicorn.pid'
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
